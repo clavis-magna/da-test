@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class CameraMultiplier : MonoBehaviour {
+public class CameraMultiplier_old : MonoBehaviour {
     
     public Camera baseCamera;
     // default is 6, more cameras = smoother transition between cameras
