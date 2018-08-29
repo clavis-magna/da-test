@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31ad06a5d738cb44ea4397d5c7cfd95a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraSensitivity: 360
+  cameraSensitivity: 100
   climbSpeed: 4
   normalMoveSpeed: 0.1
   slowMoveFactor: 0.25
@@ -312,6 +312,7 @@ GameObject:
   - component: {fileID: 534669903}
   - component: {fileID: 534669906}
   - component: {fileID: 534669907}
+  - component: {fileID: 534669908}
   m_Layer: 0
   m_Name: camera
   m_TagString: MainCamera
@@ -380,7 +381,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8cb2ce1d841846443b9842f8e68ca11a, type: 3}
   m_Name: 
@@ -402,7 +403,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8cb2ce1d841846443b9842f8e68ca11a, type: 3}
   m_Name: 
@@ -416,6 +417,28 @@ MonoBehaviour:
   hOblique: 1
   vOblique: -1
   farClip: 100
+  enableBaseCamera: 0
+  enableObliqueControls: 0
+--- !u!114 &534669908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cb2ce1d841846443b9842f8e68ca11a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseCamera: {fileID: 0}
+  cameraCount: 12
+  rotationOffset: 210
+  viewportOffsetH: 0
+  viewportOffsetV: 0
+  viewportHeight: 1
+  hOblique: 1
+  vOblique: -1
+  farClip: 1000
   enableBaseCamera: 0
   enableObliqueControls: 0
 --- !u!4 &611698649
