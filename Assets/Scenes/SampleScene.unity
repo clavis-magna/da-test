@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 73bfbe471bcefeb4ea26e6a65f61aeef, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.48889464, g: 0.24467248, b: 0.5066815, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -311,6 +311,7 @@ GameObject:
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
   - component: {fileID: 534669906}
+  - component: {fileID: 534669907}
   m_Layer: 0
   m_Name: camera
   m_TagString: MainCamera
@@ -386,13 +387,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseCamera: {fileID: 534669904}
   cameraCount: 12
-  rotationOffset: 210
+  rotationOffset: 211
   viewportOffsetH: 0
-  viewportOffsetV: 0
-  viewportHeight: 1
+  viewportOffsetV: 0.5
+  viewportHeight: 0.5
   hOblique: 1
   vOblique: -1
   farClip: 1000
+  enableBaseCamera: 0
+  enableObliqueControls: 0
+--- !u!114 &534669907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cb2ce1d841846443b9842f8e68ca11a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseCamera: {fileID: 0}
+  cameraCount: 12
+  rotationOffset: 210
+  viewportOffsetH: 0
+  viewportOffsetV: 0
+  viewportHeight: 0.5
+  hOblique: 1
+  vOblique: -1
+  farClip: 100
   enableBaseCamera: 0
   enableObliqueControls: 0
 --- !u!4 &611698649
