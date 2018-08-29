@@ -234,9 +234,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31ad06a5d738cb44ea4397d5c7cfd95a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraSensitivity: 120
+  cameraSensitivity: 360
   climbSpeed: 4
-  normalMoveSpeed: 3
+  normalMoveSpeed: 0.1
   slowMoveFactor: 0.25
   fastMoveFactor: 3
 --- !u!4 &308125026
@@ -388,11 +388,11 @@ MonoBehaviour:
   cameraCount: 12
   rotationOffset: 210
   viewportOffsetH: 0
-  viewportOffsetV: 0.3
+  viewportOffsetV: 0
   viewportHeight: 1
   hOblique: 1
   vOblique: -1
-  farClip: 50
+  farClip: 1000
   enableBaseCamera: 0
   enableObliqueControls: 0
 --- !u!4 &611698649

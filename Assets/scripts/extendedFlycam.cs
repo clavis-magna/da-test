@@ -75,7 +75,7 @@ public class extendedFlycam : MonoBehaviour
             transform.position += transform.right * normalMoveSpeed * Input.GetAxis("Horizontal") * Time.deltaTime;
 
             rotationX += Input.GetAxis("Mouse X") * cameraSensitivity * Time.deltaTime;
-            rotationY += Input.GetAxis("Mouse Y") * cameraSensitivity * Time.deltaTime;
+            rotationY += Input.GetAxis("Mouse Y") * 10 * Time.deltaTime;
             rotationY = Mathf.Clamp(rotationY, -90, 90);
 
             transform.localRotation = Quaternion.AngleAxis(rotationX, Vector3.up);
